@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Diabetes and Heart Disease Prediction System",
+      "imageSrc": "projects/99.jpg",
+      "description": "Developed a robust machine learning (ML) model to predict diabetes and heart disease using patient medical records 📊. Dataset includes age, gender, blood pressure, BMI, and glucose levels. After testing several ML algorithms, Random Forest outperformed others, achieving over 90% accuracy 🎯. This project highlights ML's potential in early disease detection, helping healthcare providers identify high-risk patients and implement preventive measures. Future work will refine these models and explore additional features to improve prediction accuracy.",
+      "skills": ["Python", "Streamlit", "Regression and Classification"],
+      "demo": "https://heartdetectionapp.streamlit.app",
+      "source": "https://github.com/Preet2504/-Diabetes-and-Heart-Disease-Prediction-System"
+    },
+    {
+      "title": "Real Estate Website (Nestify) 🏠",
+      "imageSrc": "projects/11.jpg",
+      "description": "This Real Estate Website aims to develop a dynamic and user-friendly online platform using the MERN (MongoDB, Express.js, React.js, Node.js) stack, JWT authentication and redux toolkit. This platform facilitate seamless interactions between property buyers, sellers, and renters, offering a comprehensive suite of features including property listings, advanced search functionality, price prediction of the listing, user authentication, and interactive property viewing experiences.",
+      "skills": ["React.js", "Express.js", "MongoDB", "Node.js"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/Preet2504/RealEstate"
+    },
+    {
+      "title": "Hand Gesture Recognition for Gaming 🎮✋",
+      "imageSrc": "projects/32.jpg",
+      "description": "Developed a hand gesture recognition system for gaming using OpenCV and TensorFlow. This project captures and classifies hand movements to interact with game functions in real-time. For example, in a game like Temple Run, gestures can control actions such as jumping or moving right/left or sliding. The system detects hand gestures from live video feeds, processes the images, and accurately recognizes the gestures to enhance the gaming experience.",
+      "skills": ["OpenCV", "TensorFlow", "Real-time Video Processing", "Python"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/Preet2504/-Hand-Gesture-Recognition-for-Gaming-"
+    }
+  ]
+  

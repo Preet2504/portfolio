@@ -1,0 +1,30 @@
+[
+    {
+      "role": "Web Developer Intern",
+      "organisation": "Agevole Innovation, India",
+      "startDate": "Dec 2023",
+      "endDate": "June 2024",
+      "experiences": ["Developed a dynamic and user-friendly website Nestify for real estate using the MERN stack", "Implemented JWT authentication and Redux Toolkit for enhanced security and state management.","Integrated a feature to predict listing prices based on market data and property features.","Successfully incorporated advanced search capabilities and interactive property viewing features, leading to a 15% improvement in user interaction and property exploration."],
+      "imageSrc": "history/google.png"
+    },
+    {
+      "role": "Software Developer Intern ",
+      "organisation": "F5 Systems, India",
+      "startDate": "May 2023 ",
+      "endDate": "August 2023",
+      "experiences": ["Led the development of a robust POS system using the MERN stack, ensuring seamless frontend and backend integration.", "Designed and implemented RESTful APIs for managing products, processing orders, maintaining customer records, updating inventory, managing employees, and generating sales reports.","Implemented secure user authentication and authorization, safeguarding POS features and user data."],
+      "imageSrc": "history/microsoft.png"
+    },
+    {
+      "role": "Software Engineer Intern ",
+      "organisation": "Wiz Developers, India",
+      "startDate": "Jan 2022",
+      "endDate": "Apr 2022",
+      "experiences": [
+        "Delivered key contributions to the development of a mobile application ‘DairyOnGo’ using the Flutter framework.",
+        "Integrated, structured, and managed the Firebase database, improving data storage and retrieval efficiency.","Created and maintained the product catalog and cart functionality, enhancing user experience."
+      ],
+      "imageSrc": "history/netflix.png"
+    }
+  ]
+  
