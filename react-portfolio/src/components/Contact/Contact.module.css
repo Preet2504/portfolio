@@ -2,63 +2,100 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 120px;
+  margin-top: 50px; /* Adjust as needed */
   background-color: var(--color-secondary);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 40px 10%;
+  gap: 20px;
 }
 
 .text h2 {
-  font-size: 80px;
+  font-size: 2rem; /* Adjust as needed */
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  text-align: center; /* Center text */
 }
 
 .text p {
-  font-size: 40px;
+  font-size: 1.2rem; /* Adjust as needed */
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center; /* Center text */
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center items horizontally */
   list-style: none;
-  gap: 26px;
+  gap: 1rem;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
+  text-align: center; /* Center text */
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1rem; /* Adjust as needed */
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
 }
 
-@media screen and (max-width: 830px) {
+.link img {
+  max-width: 30px; /* Adjust as needed */
+}
+
+@media screen and (min-width: 768px) {
   .container {
-    flex-direction: column;
-    gap: 23px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; /* Center items horizontally */
+    padding: 58px 10%; /* Maintain padding */
   }
 
   .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: left; /* Adjust text alignment */
   }
 
   .links {
-    align-items: center;
+    flex-direction: row;
+    gap: 20px; /* Adjust gap between links */
+  }
+
+  .link {
+    align-items: center; /* Center items horizontally */
+    text-align: left; /* Adjust text alignment */
+  }
+
+  .link a {
+    font-size: 1.25rem; /* Adjust as needed */
+  }
+
+  .link img {
+    max-width: 40px; /* Adjust image size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .link {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 5px; /* Adjust gap between items */
+    text-align: center; /* Center text */
+  }
+
+  .link a {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .link img {
+    max-width: 25px; /* Adjust image size */
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -9,19 +8,21 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Preet Patel</h1>
         <p className={styles.description}>
-        I am a passionate full-stack developer.
+          I am a passionate full-stack developer.
         </p>
         <a href="mailto:preetpatel2504@email.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
-      <img
-        src={getImageUrl("hero/heroImage.png")}
-        alt="Hero image of me"
-        className={styles.heroImg}
-      />
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
+      <div className={styles.heroImgContainer}>
+        <img
+          src={getImageUrl("hero/heroImage.png")}
+          alt="Hero image of me"
+          className={styles.heroImg}
+        />
+      </div>
     </section>
   );
 };
+
+export default Hero;

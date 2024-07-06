@@ -1,16 +1,23 @@
+@import "../../vars.css";
+
 .container {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1c3faa 0%, #2a5298 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   overflow: hidden; /* Ensure content does not overflow */
   height: 100%; /* Ensure the container takes full height */
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Add subtle hover effect */
 }
 
 .imageContainer {
   flex: 0 0 auto; /* Non-flexible, fixed size */
-  height: 400px; /* Fixed height for image */
+  height: 220px; /* Fixed height for image */
   overflow: hidden; /* Hide overflow */
 }
 
@@ -18,26 +25,32 @@
   width: 100%; /* Ensure image fills the container width */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Cover entire space */
+  transition: transform 0.3s ease;
+}
+
+.container:hover .image {
+  transform: scale(1.05); /* Zoom image on hover */
 }
 
 .content {
   flex: 1 1 auto; /* Flexible, grows with content */
   display: flex;
   flex-direction: column;
-  padding: 18px 24px;
+  padding: 20px;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   margin-top: 12px; /* Add margin to separate from description */
+  color: #ffffff; /* White text color */
 }
 
 .description {
   margin-top: 12px;
-  font-size: 18px; /* Adjust font size */
-  font-weight: 400;
-  line-height: 1.5; /* Increase line height for readability */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.6; /* Increase line height for readability */
+  color: #ffffff; /* White text color */
   overflow: hidden; /* Hide overflow */
   text-overflow: ellipsis; /* Add ellipsis for long descriptions */
   display: -webkit-box;
@@ -47,6 +60,7 @@
 
 .skills {
   margin-top: 12px;
+  margin-bottom: 12px; /* Add space below skills */
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -54,26 +68,64 @@
 }
 
 .skill {
-  font-size: 16px; /* Adjust font size */
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 6px 18px;
+  font-size: 14px; /* Adjust font size */
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  color: #ffffff; /* White text color */
+  padding: 6px 12px; /* Adjust padding */
 }
 
 .links {
   margin-top: auto; /* Push links to bottom */
   display: flex;
   justify-content: center; /* Center align buttons */
-  gap: 13px; /* Adjust spacing between buttons */
+  gap: 10px; /* Adjust spacing between buttons */
 }
 
 .link {
   text-decoration: none;
-  color: var(--color-text);
-  font-size: 18px; /* Adjust font size */
+  color: #ffffff;
+  font-size: 16px; /* Adjust font size */
   font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 6px 18px;
+  border-radius: 20px;
+  background-color: var(--color-primary); /* Your primary color */
+  padding: 8px 20px; /* Adjust padding */
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: var(--color-primary-dark); /* Darker primary color on hover */
+}
+
+.demo {
+  background-color: #007bff; /* Blue demo button */
+}
+
+.source {
+  background-color: #6c757d; /* Gray source button */
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer {
+    height: 180px; /* Adjust image height for smaller screens */
+  }
+
+  .title {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .description {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .skill {
+    font-size: 12px; /* Adjust font size */
+    padding: 4px 10px; /* Adjust padding */
+  }
+
+  .link {
+    font-size: 14px; /* Adjust font size */
+    padding: 6px 16px; /* Adjust padding */
+  }
 }
